@@ -4,16 +4,16 @@ import org.springframework.data.cassandra.mapping.Column;
 import org.springframework.data.cassandra.mapping.PrimaryKey;
 import org.springframework.data.cassandra.mapping.Table;
 
-@Table("usuarios")
-public class Usuario {
+@Table("persona")
+public class Persona {
 
-	@PrimaryKey("userid")
+	@PrimaryKey("persona_id")
 	private Integer id;
 	
-	@Column("nombre")
+	@Column("nombres")
 	private String nombres;
 	
-	@Column("ape1")
+	@Column("apellidos")
 	private String apellidos;
 	
 	
